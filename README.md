@@ -11,7 +11,7 @@ Xavier, A. C.; King, C. W.; Scanlon, B. R. An update of Xavier, King and Scanlon
 
 Para download dos arquivos, acessar: https://utexas.app.box.com/v/Xavier-etal-IJOC-DATA
 
-# Arquivos necessários $a=\frac{1}{2} 
+# Arquivos necessários $a=\frac{1}{2}$
 A lista completa dos arquivos para rodar os scripts são apresentados no arquivo "arquivos_NetCDF.txt".
 
 
