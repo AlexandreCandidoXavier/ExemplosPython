@@ -14,4 +14,6 @@ Para download dos arquivos, acessar: https://utexas.app.box.com/v/Xavier-etal-IJ
 # Arquivos necessários
 A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no arquivo "arquivos_NetCDF.txt".
 
+# Os resultados gráficos dos exmplos acima são encontrado em:
 
+https://sites.google.com/site/alexandrecandidoxavierufes/home/scripts-em-python
