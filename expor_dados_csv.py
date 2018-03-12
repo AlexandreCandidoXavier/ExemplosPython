@@ -5,8 +5,8 @@ import matplotlib.pylab as plt
 import time
 
 # limits of the area, West-South and East-North
-lat_min, lat_max = -23.375, -22.125
-lon_min, lon_max = -48.625, -45.875
+lat_min, lat_max = -32.375, -30.825
+lon_min, lon_max = -54.825, -53.475
 
 # variables names
 var_names = ['prec', 'Rs', 'u2','Tmax', 'Tmin', 'RH', 'ETo']
@@ -77,11 +77,12 @@ mat2 = np.c_[precStation,
             eto.ETo.isel(longitude=xr.DataArray(lon, dims='z'), latitude=xr.DataArray(lat, dims='z')).values
 ]
 
-count = 1
+
 for n in range(len(lat)):
-    print('arquivo {} de um total de {}'.format(count, number_cell))
-    name_file = 'lat{}_lon{}_test.csv'.format((latitude[lat[n]]), longitude[lon[n]])
-    file = mat2[:, n::len(lon)]
-    pd.DataFrame(file, index=rs.time, columns=var_names).to_csv(name_file)
-    count += 1
+    print('arquivo {} de um total de {}'.format(n+1, number_cell))
+    name_file = 'lat{}_lon{}.csv'.format((latitude[lat[n]]), longitude[lon[n]])
+    if ~np.isnan(mat2[0, n]):
+        file = mat2[:, n::len(lon)]
+        pd.DataFrame(file, index=rs.time, columns=var_names).to_csv(name_file)
+
 print(time.time() - start)
