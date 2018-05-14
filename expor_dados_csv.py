@@ -50,7 +50,7 @@ prec_count.sum('latitude').sum('longitude').plot()
 plt.ylabel('Number of rain gauges')
 plt.figure()
 eto_count.sum('latitude').sum('longitude').plot()
-plt.ylabel('Number of wheather stations')
+plt.ylabel('Number of weather stations')
 plt.show(block=False)
 # starting to export variables into the area
 # each file will have the data of all variables for just one cell
