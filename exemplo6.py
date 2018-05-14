@@ -1,7 +1,8 @@
 import xarray as xr # versao '0.9.6'
 import matplotlib.pyplot as plt # versao '2.0.2'
 
-"""Para todas as variaveis existem dois controles, um he a distancia 
+"""
+Para todas as variaveis existem dois controles, um he a distancia 
 do centro da celula a estacao mais proxima ("dist_nearest") e o outro
 he o numero de estacoes/pluviometros dentro da celula (informacoes 
 ver "paper"). 
@@ -9,12 +10,7 @@ ver "paper").
 Aqui serao plotados os controles da grade precipitacaoo em duas 
 localidades, Sorriso-MT e Campinas-SP (na verdade he da 
 celula mais proxima a estas cidades).
-
-Arquivos necessarios:
-prec_daily_UT_Brazil_v2.2_19800101_19891231_Control.nc
-prec_daily_UT_Brazil_v2.2_19900101_19991231_Control.nc
-prec_daily_UT_Brazil_v2.2_20000101_20091231_Control.nc
-prec_daily_UT_Brazil_v2.2_20100101_20151231_Control.nc"""
+"""
 
 # lendo arquivo
 path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/controls/'
