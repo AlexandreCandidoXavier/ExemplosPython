@@ -11,7 +11,7 @@ Tmax_daily_UT_Brazil_v2_19800101_19891231.nc
 Tmax_daily_UT_Brazil_v2_19900101_19991231.nc
 Tmax_daily_UT_Brazil_v2_20000101_20061231.nc
 Tmax_daily_UT_Brazil_v2_20070101_20131231.nc
-Tmax_daily_UT_Brazil_v2_20140101_20170731.nc
+Tmax_daily_UT_Brazil_v2_20140101_20170731_s1.nc
 """
 
 # pegando variavel
