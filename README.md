@@ -5,7 +5,7 @@ Xavier, A. C., King, C. W. and Scanlon, B. R. Daily gridded meteorological varia
 
 e do trabalho apresentado no SBSR2017:
 
-Xavier, A. C.; King, C. W.; Scanlon, B. R. An update of Xavier, King and Scanlon (2016) daily precipitation gridded data set for the Brazil. In Anais do XVIII Simpósio Brasileiro de Sensoriamento Remoto -SBSR. Santos-SP.2017. (http://marte2.sid.inpe.br/rep/sid.inpe.br/marte2/2017/10.23.17.08.52)
+Xavier, A. C., King, C. W. and Scanlon, B. R. An update of Xavier, King and Scanlon (2016) daily precipitation gridded data set for the Brazil. In Anais do XVIII Simpósio Brasileiro de Sensoriamento Remoto -SBSR. Santos-SP.2017. (http://marte2.sid.inpe.br/rep/sid.inpe.br/marte2/2017/10.23.17.08.52)
 
 # Onde encontrar os dados gradeados
 
