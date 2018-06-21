@@ -16,4 +16,4 @@ A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no
 
 # Os resultados gráficos dos exemplos acima são encontrado em:
 
-https://sites.google.com/site/alexandrecandidoxavierufes/home/scripts-em-python
+https://sites.google.com/site/alexandrecandidoxavierufes/scripts-em-python
