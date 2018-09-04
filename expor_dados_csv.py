@@ -5,8 +5,8 @@ import matplotlib.pylab as plt
 import time
 
 # limits of the area, West-South and East-North
-lat_min, lat_max = -32.375, -30.825
-lon_min, lon_max = -54.825, -53.475
+lat_min, lat_max = -20.5, -20.0
+lon_min, lon_max = -41.5, -40.0
 
 # variables names
 var_names = ['prec', 'Rs', 'u2','Tmax', 'Tmin', 'RH', 'ETo']
@@ -46,10 +46,10 @@ eto_count = eto_count.where(mask, drop=True)
 
 # plotting controls in the area.
 # number of rain gauges and weather data into the area along the time
-prec_count.sum('latitude').sum('longitude').plot()
+prec_count.sum(['latitude', 'longitude']).plot()
 plt.ylabel('Number of rain gauges')
 plt.figure()
-eto_count.sum('latitude').sum('longitude').plot()
+eto_count.sum(['latitude', 'longitude']).plot()
 plt.ylabel('Number of weather stations')
 plt.show(block=False)
 # starting to export variables into the area
