@@ -1,4 +1,5 @@
 import xarray as xr
+import matplotlib.pyplot as plt
 
 # Lendo dados GMTED2010 reamostrados para resolucao 0,1 grau
 path = r'D:\Dropbox\ParaUbuntu'
