@@ -9,7 +9,7 @@ Xavier, A. C., King, C. W. and Scanlon, B. R. An update of Xavier, King and Scan
 
 # Onde encontrar os dados gradeados
 
-Para download dos arquivos, acessar [https://www.dropbox.com/sh/awb2ghit03kf39c/AAD69uHiLxVN6IoAwIyXLQ3Pa?dl=0](aqui)
+Para download dos arquivos, acessar [aqui](https://www.dropbox.com/sh/awb2ghit03kf39c/AAD69uHiLxVN6IoAwIyXLQ3Pa?dl=0)
 
 # Arquivos necessários
 A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no arquivo "arquivos_NetCDF.txt".
