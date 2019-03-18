@@ -7,16 +7,16 @@ import numpy as np
 algumas localidades (medias do periodo 01/01/1980 a 31/07/2017)
 
 Arquivos:
-Tmax_daily_UT_Brazil_v2_19800101_19891231.nc
-Tmax_daily_UT_Brazil_v2_19900101_19991231.nc
-Tmax_daily_UT_Brazil_v2_20000101_20061231.nc
-Tmax_daily_UT_Brazil_v2_20070101_20131231.nc
-Tmax_daily_UT_Brazil_v2_20140101_20170731_s1.nc
+Tmax_daily_UT_Brazil_v2.1_19800101_19891231.nc
+Tmax_daily_UT_Brazil_v2.1_19900101_19991231.nc
+Tmax_daily_UT_Brazil_v2.1_20000101_20061231.nc
+Tmax_daily_UT_Brazil_v2.1_20070101_20131231.nc
+Tmax_daily_UT_Brazil_v2.1_20140101_20170731.nc
 """
 
 # pegando variavel
 path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
-ds = xr.open_mfdataset(path_var + 'Tmax_daily_UT_Brazil_v2*.nc')
+ds = xr.open_mfdataset(path_var + 'Tmax_daily_UT_Brazil_v2.1*.nc')
 var = ds['Tmax']
 
 # Nome dos pontos
@@ -38,6 +38,7 @@ for n, names in enumerate(Names):
     # concatenating in pandas
     varMonthly2Export[names] = tmaxCityMonthly
 
+plt.ylim(22, 33)
 plt.title('')
 plt.legend()
 plt.show(block=False)
