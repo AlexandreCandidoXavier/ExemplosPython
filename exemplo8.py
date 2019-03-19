@@ -3,8 +3,16 @@ import matplotlib.pyplot as plt
 """
 Abrindo e plotando a normal da temperatura media do mês janeiro, período 1981-01-01-2009-12-31, 
 utilizando as grade Tmax e Tmin, v2.1, resolução 0,1 graus. Arquivos necessários:
-
-
+Tmax_daily_UT_Brazil_v2.1_19800101_19891231.nc
+Tmax_daily_UT_Brazil_v2.1_19900101_19991231.nc
+Tmax_daily_UT_Brazil_v2.1_20000101_20061231.nc
+Tmax_daily_UT_Brazil_v2.1_20070101_20131231.nc
+Tmax_daily_UT_Brazil_v2.1_20140101_20170731.nc
+Tmin_daily_UT_Brazil_v2.1_19800101_19891231.nc
+Tmin_daily_UT_Brazil_v2.1_19900101_19991231.nc
+Tmin_daily_UT_Brazil_v2.1_20000101_20061231.nc
+Tmin_daily_UT_Brazil_v2.1_20070101_20131231.nc
+Tmin_daily_UT_Brazil_v2.1_20140101_20170731.nc
 """
 
 #definição da dadas para calculo das normais
