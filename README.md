@@ -12,7 +12,7 @@ Xavier, A. C., King, C. W. and Scanlon, B. R. An update of Xavier, King and Scan
 Para download dos arquivos, acessar [aqui](https://www.dropbox.com/sh/awb2ghit03kf39c/AAD69uHiLxVN6IoAwIyXLQ3Pa?dl=0)
 
 # Arquivos necessários
-A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no arquivo "arquivos_NetCDF.txt".
+A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no arquivo [arquivos_NetCDF.txt](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/arquivos_NetCDF.txt).
 
 # Os resultados gráficos dos exemplos acima são encontrado em:
 
