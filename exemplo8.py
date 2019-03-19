@@ -18,7 +18,7 @@ Tmin_daily_UT_Brazil_v2.1_20140101_20170731.nc
 #definição da dadas para calculo das normais
 day_first, day_last = '1981-01-01', '2009-12-31'
 
-# pegando "Tmax v2.1" para o dia e latitude em questao
+# pegando Tmax e Tmin, v2.1 e calculando as msuas respectivas medias mensais
 path = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
 tmax = xr.open_mfdataset(path + 'Tmax_daily_UT_Brazil_v2.1*.nc').Tmax
 tmax_month = tmax.sel(time=slice(day_first, day_last)).groupby('time.month').mean('time')
