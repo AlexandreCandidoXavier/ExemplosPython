@@ -18,4 +18,4 @@ A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no
 
 https://sites.google.com/site/alexandrecandidoxavierufes/scripts-em-python
 
-![alt text](https://github.com/AlexandreCandidoXavier/ExemplosPython/tree/master/figuras/Figure_8.png)
+https://github.com/AlexandreCandidoXavier/ExemplosPython/tree/master/figuras/Figure_8.png
