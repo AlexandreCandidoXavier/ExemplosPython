@@ -22,9 +22,14 @@ https://sites.google.com/site/alexandrecandidoxavierufes/scripts-em-python
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_1.png)
 
-## [exemplo2.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo2.py) Plotando dados e controles
+## [exemplo2.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo2.py) Plotando dados diários e média mensal para uma posição
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_2.png)
+
+
+## [exemplo3.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo3.py) Plotando média mensal de RH para o Brasil
+
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_3.png)
 
 ## [exemplo9.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo8.py) Plotando temperatura média histórica
 
