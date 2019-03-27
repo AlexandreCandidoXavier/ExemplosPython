@@ -25,6 +25,7 @@ for n, city in enumerate(cityNames):
     varMean.sel(latitude=cityCoord[n][0], longitude=cityCoord[n][1],
                 method='nearest').plot(label=city)
 
+plt.ylim(1, 8)
 plt.title('')
 plt.legend(ncol=2)
 plt.show()
