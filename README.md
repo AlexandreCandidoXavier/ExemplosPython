@@ -31,7 +31,7 @@ https://sites.google.com/site/alexandrecandidoxavierufes/scripts-em-python
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_3.png)
 
-## [exemplo4.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo4.py) Plotando média mensal para algumas cidades
+## [exemplo4.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo4.py) Plotando média mensal de ETo para algumas cidades
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_4.png)
 
