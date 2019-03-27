@@ -22,6 +22,10 @@ https://sites.google.com/site/alexandrecandidoxavierufes/scripts-em-python
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_1.png)
 
+## [exemplo2.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo2.py) Plotando dados e controles
+
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_2.png)
+
 ## [exemplo9.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo8.py) Plotando temperatura média histórica
 
 Temperatura média (T<sub>média</sub>) para o mês de janeiro, período 01/01/1981-31/12/2009, em que:
