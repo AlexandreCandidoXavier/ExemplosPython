@@ -39,6 +39,16 @@ https://sites.google.com/site/alexandrecandidoxavierufes/scripts-em-python
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_5.png)
 
+## [exemplo6.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo6.py) Plotando controles ao longo do tempo para duas localidade
+
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_6.png)
+
+
+## [exemplo7.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo7.py) Plotando controles ao longo do tempo para duas localidade
+
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_7.png)
+
+
 ## [exemplo9.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo8.py) Plotando temperatura média histórica
 
 Temperatura média (T<sub>média</sub>) para o mês de janeiro, período 01/01/1981-31/12/2009, em que:
