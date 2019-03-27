@@ -21,13 +21,8 @@ Rs_dist_nearest = data_control['dist_nearest']
 # escolhendo o dia
 day2get = '2008-05-15'
 
-Rs2_one_day = Rs.sel(time=day2get)
-Rs2_one_day_count = Rs_count.sel(time=day2get)
-Rs2_one_dist_nearest = Rs_dist_nearest.sel(time=day2get)
-
-# plotando
-fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
-Rs2_one_day.plot(ax=ax1), ax1.axis('off')
-Rs2_one_day_count.plot(ax=ax2), ax2.axis('off')
-Rs2_one_dist_nearest.plot(ax=ax3), ax3.axis('off')
-plt.show()
+# Plotando
+_, (ax1, ax2, ax3) = plt.subplots(1, 3)
+Rs.sel(time=day2get).plot(ax=ax1), ax1.axis('off')
+Rs_count.sel(time=day2get).plot(ax=ax2), ax2.axis('off')
+Rs_dist_nearest.sel(time=day2get).plot(ax=ax3), ax3.axis('off')
