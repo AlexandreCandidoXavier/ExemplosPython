@@ -25,22 +25,20 @@ lat_lon = [[-12.5, -55.7],
 
 # plotando distancia do pluviometro mais proximo, ao longo do tempo,
 # que foi utilizado na interpolacao
-ax = plt.subplot(2, 1, 1)
+_, (ax1, ax2) = plt.subplots(2, 1)
 for n, names in enumerate(Names):
     dist_nearest.sel(latitude=lat_lon[n][0],
                      longitude=lat_lon[n][1],
-                     method='nearest').plot(label=names)
-plt.legend()
-plt.title('')
+                     method='nearest').plot(ax=ax1, label=names)
 
-# plotando o numero de pluviometros existentes dentro das
-# celulas que contem os municipios
-ax = plt.subplot(2, 1, 2)
-for n, names in enumerate(Names):
+    # número de estações que contem na célula
     count.sel(latitude=lat_lon[n][0],
               longitude=lat_lon[n][1],
-              method='nearest').plot(label=names)
+              method='nearest').plot(ax=ax2, label=names)
 
-plt.legend()
-plt.title('')
-plt.show()
+ax1.set_ylim(0, 150)
+ax1.legend()
+ax1.set_title('')
+ax2.set_ylim(-1, 5)
+ax2.legend()
+ax2.set_title('')
