@@ -10,7 +10,7 @@ os de controle tambem"""
 path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
 
 # set correct path of the controls
-path_control = 'D:/Dropbox/netcdfgrid3/controls/'
+path_control = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/controls/'
 
 data = xr.open_mfdataset(path_var + 'Rs_daily_UT_Brazil_v2*1.nc')
 data_control = xr.open_mfdataset(path_control + '/Rs_daily_UT_Brazil_v2*_Control.nc')
@@ -26,7 +26,8 @@ Rs2_one_day_count = Rs_count.sel(time=day2get)
 Rs2_one_dist_nearest = Rs_dist_nearest.sel(time=day2get)
 
 # plotando
-plt.subplot(131), Rs2_one_day.plot(), plt.axis('off')
-plt.subplot(132), Rs2_one_day_count.plot(), plt.axis('off')
-plt.subplot(133), Rs2_one_dist_nearest.plot(), plt.axis('off')
+fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
+Rs2_one_day.plot(ax=ax1), ax1.axis('off')
+Rs2_one_day_count.plot(ax=ax2), ax2.axis('off')
+Rs2_one_dist_nearest.plot(ax=ax3), ax3.axis('off')
 plt.show()
