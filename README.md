@@ -18,7 +18,7 @@ A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no
 
 # Para exportar todos os dados 
 
-Exportando todos os dados de uma região em "cvs", em que cada arquivo "csv" corresponde aos dados de uma célula da área. [Aqui](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/lat-21.0_lon-44.1.csv) é apresentado um período do arquivo exportado.
+Exportando todos as variáveis diárias de uma ou mais localidades para o formato "cvs". Cada arquivo "csv" corresponde aos dados da célula mais próxima à posição requerida (coordenada, latitude e longitude). [Aqui](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/lat-21.0_lon-44.1.csv) é apresentado exemplo do arquivo exportado, para um pequeno período.
 
 [expor_dados_csv2.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/expor_dados_csv2.py)
 
