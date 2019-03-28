@@ -20,7 +20,7 @@ A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no
 
 Exportando todos os dados de uma região em "cvs", em que cada arquivo "csv" corresponde aos dados de uma célula da área. [Aqui](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/lat-21.0_lon-44.1.csv) é apresentado um período do arquivo exportado.
 
-[expor_dados_csv.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/lat-21.0_lon-44.1.csv)
+[expor_dados_csv2.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/expor_dados_csv2.py)
 
 # Os resultados gráficos
 
