@@ -14,11 +14,11 @@ Para download dos arquivos, acessar [aqui](https://www.dropbox.com/sh/awb2ghit03
 # Arquivos necessários
 A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no arquivo [arquivos_NetCDF.txt](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/arquivos_NetCDF.txt).
 
-# Mais informções sobre atualizações [aqui](https://sites.google.com/site/alexandrecandidoxavierufes/dados-meteorologicos-do-brasil)
+# Informações sobre atualizações [aqui](https://sites.google.com/site/alexandrecandidoxavierufes/dados-meteorologicos-do-brasil)
 
 # Para exportar todos os dados 
 
-Exportando todos os dados de uma região em cvs, [Aqui] segue um exemplo do formato de arquivo exportado.
+Exportando todos os dados de uma região em "cvs", em que cada arquivo "csv" corresponde aos dados de uma célula da área. [Aqui] segue um exemplo do formato de arquivo exportado.
 
 [expor_dados_csv.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/expor_dados_csv.py)
 
