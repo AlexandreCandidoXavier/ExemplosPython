@@ -64,7 +64,9 @@ T<sub>média</sub>=(T<sub>max</sub>+T<sub>min</sub>)/2
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_8.png)
 
 
-## [abrindo.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo7.py) Calculo da diferenca sazonal entre a precipitacao e a ETo para o Brasil 
+## [abrindo_relevo.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/abrindo_relevo.py) Abrindo relevo para a região do Brasil do modelo gmted2010, reamostrado para 0,1 graus
+
+Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073/pdf/of2011-1073.pdf)
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/gmted2010_reamostrado.png)
 
