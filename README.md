@@ -16,13 +16,13 @@ A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no
 
 # Informações sobre atualizações [aqui](https://sites.google.com/site/alexandrecandidoxavierufes/dados-meteorologicos-do-brasil)
 
-# Para exportar todos os dados 
+# Para exportar todos os dados em CSV
 
 Exportando todos as variáveis diárias de uma ou mais localidades para o formato "cvs". Cada arquivo "csv" corresponde aos dados da célula mais próxima à posição requerida (coordenada, latitude e longitude). [Aqui](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/lat-21.0_lon-44.1.csv) é apresentado exemplo do arquivo exportado, para um pequeno período.
 
 [expor_dados_csv2.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/expor_dados_csv2.py)
 
-# Os resultados gráficos
+# Os resultados gráficos dos scripts
 
 ## [exemplo1.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo1.py) Plotando dados e controles
 
@@ -62,3 +62,9 @@ Temperatura média (T<sub>média</sub>) para o mês de janeiro, período 01/01/1
 T<sub>média</sub>=(T<sub>max</sub>+T<sub>min</sub>)/2
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_8.png)
+
+
+## [abrindo.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo7.py) Calculo da diferenca sazonal entre a precipitacao e a ETo para o Brasil 
+
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_7.png)
+
