@@ -66,5 +66,5 @@ T<sub>média</sub>=(T<sub>max</sub>+T<sub>min</sub>)/2
 
 ## [abrindo.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo7.py) Calculo da diferenca sazonal entre a precipitacao e a ETo para o Brasil 
 
-![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_7.png)
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/gmted2010_reamostrado.png)
 
