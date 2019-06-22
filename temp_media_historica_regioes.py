@@ -23,7 +23,7 @@ Tmin_daily_UT_Brazil_v2.1_20140101_20170731.nc
 # definição da dadas para calculos
 day_first, day_last = '1980-01-01', '2016-12-31'
 
-# pegando Tmax e Tmin, v2.1 e calculando as msuas respectivas medias mensais
+# pegando Tmax e Tmin, v2.1 e calculando as sua respectivas medias anuais
 path = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
 tmax = xr.open_mfdataset(path + 'Tmax_daily_UT_Brazil_v2.1*.nc').Tmax
 tmax_yearly = tmax.sel(time=slice(day_first, day_last)).resample(time='Y').mean('time')
