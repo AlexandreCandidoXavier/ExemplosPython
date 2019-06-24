@@ -70,3 +70,5 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/gmted2010_reamostrado.png)
 
+## [abrindo_relevo.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/temp_media_historica_regioes.py_
+
