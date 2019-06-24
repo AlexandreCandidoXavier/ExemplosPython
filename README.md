@@ -71,13 +71,17 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/gmted2010_reamostrado.png)
 
 ## [temp_media_historica_regioes.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/temp_media_historica_regioes.py) Avaliando avariação temperal da temperatura média anual em diferentes regiões no Brasil 
-Regiões
+
+**Regiões**
+
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/regioes.png)
-Variação temporal
+
+**Variação temporal**
+
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/tmean_temporal_regioes.png)
 
 
-Resultado das estatisticas (variável "df_stat_region")
+**Resultado das estatisticas (variável "df_stat_region")**
 
 | Regiao        |   slope  | intercept   | r_value   |     p_value |   std_err |
 | ------------- | -------- | ----------- | --------- | ----------- | --------- |
