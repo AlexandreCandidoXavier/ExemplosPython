@@ -78,12 +78,13 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 
 Resultado das estatisticas (variável "df_stat_region")
 
-|              |   slope| intercept   |r_value   |     p_value|   std_err|
-|sul           |0.000010|  20.512220  |0.000214  |9.989955e-01|  0.007881|
-|sudeste       |0.021973| -20.729965  |0.629384  |3.006463e-05|  0.004586|
-|nordeste      |0.028534| -31.322058  |0.704672  |1.126270e-06|  0.004856|
-|centro-oeste  |0.025890| -26.423567  |0.790216  |6.013308e-09|  0.003394|
-|norte         |0.035253| -43.624015  |0.829851  |2.159944e-10|  0.004007|
+
+| Regiao        |   slope  | intercept   | r_value   |     p_value |   std_err |
+| sul           | 0.000010 |  20.512220  | 0.000214  | 9.989955e-01|  0.007881 |
+| sudeste       | 0.021973 | -20.729965  | 0.629384  | 3.006463e-05|  0.004586 |
+| nordeste      | 0.028534 | -31.322058  | 0.704672  | 1.126270e-06|  0.004856 |
+| centro-oeste  | 0.025890 | -26.423567  | 0.790216  | 6.013308e-09|  0.003394 |
+| norte         | 0.035253 | -43.624015  | 0.829851  | 2.159944e-10|  0.004007 |
 
 
 | First Header  | Second Header |
