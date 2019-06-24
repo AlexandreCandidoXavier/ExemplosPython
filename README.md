@@ -83,3 +83,18 @@ sudeste       0.021973 -20.729965  0.629384  3.006463e-05  0.004586
 nordeste      0.028534 -31.322058  0.704672  1.126270e-06  0.004856
 centro-oeste  0.025890 -26.423567  0.790216  6.013308e-09  0.003394
 norte         0.035253 -43.624015  0.829851  2.159944e-10  0.004007
+
+
+/***
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Animals} & \textbf{Sports}  & \textbf{Fruits} \\ \hline
+Cat     & Soccer     & Apple  \\ \hline
+Dog     & Basketball & Orange \\ \hline
+\end{tabular}
+\end{table}
+***/
