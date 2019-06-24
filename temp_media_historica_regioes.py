@@ -20,11 +20,13 @@ Tmin_daily_UT_Brazil_v2.1_20070101_20131231.nc
 Tmin_daily_UT_Brazil_v2.1_20140101_20170731.nc
 """
 
+# colocar em "path" o caminho correto dos arquivos NetCDF
+path = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
+
 # definição da dadas para calculos
 day_first, day_last = '1980-01-01', '2016-12-31'
 
-# pegando Tmax e Tmin, v2.1 e calculando as sua respectivas medias anuais
-path = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
+# pegando Tmax e Tmin, v2.1 e calculando as suas respectivas medias anuais
 tmax = xr.open_mfdataset(path + 'Tmax_daily_UT_Brazil_v2.1*.nc').Tmax
 tmax_yearly = tmax.sel(time=slice(day_first, day_last)).resample(time='Y').mean('time')
 
@@ -38,7 +40,7 @@ temp_mean_yearly = (tmax_yearly+tmin_yearly) / 2
 fig, ax = plt.subplots(1)
 temp_mean_yearly.isel(time=0).plot(ax=ax)
 
-# definindo regioes
+# definindo regioes: cada linha tem as coordenadas limites da respectiva região na ordem:
 # sul, sudeste, nordeste, centro-oeste, norte
 names_regions = ['sul', 'sudeste', 'nordeste', 'centro-oeste', 'norte']
 names_regions_abre = ['S', 'SE', 'NE', 'CO', 'N',]
@@ -66,7 +68,7 @@ for n in range(5):
     # creating a mask of the region
     mask = (lon_min < tmax_yearly.longitude) & (lon_max > tmax_yearly.longitude) & \
            (lat_min < tmax_yearly.latitude) &  (lat_max > tmax_yearly.latitude)
-    # yearly mean
+    # yearly tmean to Dataframe
     temp_mean_yearly_region = temp_mean_yearly.where(mask).mean(['latitude', 'longitude']).values
     df_region = pd.DataFrame(np.c_[np.arange(37), temp_mean_yearly_region], columns=['year', 't_mean'])
     df_region['region'] = names_regions[n]
@@ -76,21 +78,19 @@ for n in range(5):
         df_all = pd.concat([df_all, df_region])
 
 ax.legend(loc=2, prop={'size': 6})
-ax.set_xlim(-75,-34)
-ax.set_ylim(-35,7)
+ax.set_xlim(-75, -34)
+ax.set_ylim(-35, 7)
 
-# grafico simple linear regression
+# grafico simple linear regression "year" versus "t_mean" para cada regiao
 g = sns.lmplot(x='year', y="t_mean", hue="region", data=df_all, legend=False)
 plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
        ncol=2, mode="expand", borderaxespad=0.)
 plt.tight_layout()
 
-
-# estatiticas
+# estatisticas por regiao na variavel "stat_region"
 df_all['year_ano'] = df_all['year'] + 1980
 df_all['datas'] = df_all.index.values
 df_all['name_legend'] = ''
-# estatisticas por regiao
 stat_region = np.zeros((5,5))
 for n in np.arange(5):
     x = df_all[df_all['region'] == names_regions[n]].year_ano.values
