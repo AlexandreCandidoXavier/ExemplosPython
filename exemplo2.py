@@ -7,11 +7,12 @@ import numpy as np
 da temperatura maxima (Tmax), calculando a sua media 
 mensal (01/1980-12/2010) e exportando dados diarios em arquivo cvs:
 
-Tmax_daily_UT_Brazil_v2_19800101_19891231.nc
-Tmax_daily_UT_Brazil_v2_19900101_19991231.nc
-Tmax_daily_UT_Brazil_v2_20000101_20061231.nc
-Tmax_daily_UT_Brazil_v2_20070101_20131231.nc
-Tmax_daily_UT_Brazil_v2_20140101_20170731_s1.nc"""
+Tmax_daily_UT_Brazil_v2.1_19800101_19891231.nc
+Tmax_daily_UT_Brazil_v2.1_19900101_19991231.nc
+Tmax_daily_UT_Brazil_v2.1_20000101_20061231.nc
+Tmax_daily_UT_Brazil_v2.1_20070101_20131231.nc
+Tmax_daily_UT_Brazil_v2.1_20140101_20170731.nc
+"""
 
 # set correct path of the variables
 path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
