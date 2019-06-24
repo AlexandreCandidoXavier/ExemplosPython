@@ -76,10 +76,9 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 # Variação temporal
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/tmean_temporal_regioes.png)
 
-Resultado das estatisticas (variável "df_stat_region")
-
 
 | Regiao        |   slope  | intercept   | r_value   |     p_value |   std_err |
+| ------------- | -------- | ----------- | --------- | ----------- | --------- |
 | sul           | 0.000010 |  20.512220  | 0.000214  | 9.989955e-01|  0.007881 |
 | sudeste       | 0.021973 | -20.729965  | 0.629384  | 3.006463e-05|  0.004586 |
 | nordeste      | 0.028534 | -31.322058  | 0.704672  | 1.126270e-06|  0.004856 |
