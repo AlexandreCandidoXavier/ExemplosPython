@@ -98,3 +98,11 @@ Dog     & Basketball & Orange \\ \hline
 \end{tabular}
 \end{table}
 ***/
+
+
+/***
+| __Animals__ | __Sports__ | __Fruits__ |
+|-------------|------------|------------|
+| Cat         | Soccer     | Apple      |
+| Dog         | Basketball | Orange     |
+***/
