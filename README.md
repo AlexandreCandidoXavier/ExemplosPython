@@ -70,7 +70,7 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/gmted2010_reamostrado.png)
 
-## [temp_media_historica_regioes.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/temp_media_historica_regioes.py) Avaliando avariação temperal da temperatura média anual em diferentes regiões no Brasil 
+## [temp_media_historica_regioes.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/temp_media_historica_regioes.py) Avaliando a variação temperal da temperatura média anual em diferentes regiões no Brasil 
 
 **Regiões**
 
