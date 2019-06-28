@@ -2,7 +2,6 @@ import xarray as xr
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import datetime as dt
 from scipy import stats
 import seaborn as sns
 
@@ -42,7 +41,7 @@ temp_mean_yearly.isel(time=0).plot(ax=ax)
 
 # definindo regioes: cada linha tem as coordenadas limites da respectiva região na ordem:
 # sul, sudeste, nordeste, centro-oeste, norte
-names_regions = ['sul', 'sudeste', 'nordeste', 'centro-oeste', 'norte']
+names_regions = ['Sul', 'Sudeste', 'Nordeste', 'Centro-Oeste', 'Norte']
 names_regions_abre = ['S', 'SE', 'NE', 'CO', 'N',]
 regiao_lat = [[-34, -22],
               [-25.6, -13.8],
