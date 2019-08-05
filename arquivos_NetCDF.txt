@@ -11,6 +11,7 @@ prec_daily_UT_Brazil_v2.2_19800101_19891231.nc
 prec_daily_UT_Brazil_v2.2_19900101_19991231.nc
 prec_daily_UT_Brazil_v2.2_20000101_20091231.nc
 prec_daily_UT_Brazil_v2.2_20100101_20151231.nc
+prec_daily_UT_Brazil_v2.2_20160101_20161231.nc
 
 RH_daily_UT_Brazil_v2_19800101_19891231.nc
 RH_daily_UT_Brazil_v2_19900101_19991231.nc
