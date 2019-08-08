@@ -92,6 +92,6 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 | norte         | 0.035253 | -43.624015  | 0.829851  | 2.159944e-10|  0.004007 |
 
 
-## [koopen_rodando.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/koopen_rodando.py)Classificação de do clima para o brasil de acordo com Koppen e os dados gradeados
+## [koopen_rodando.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/koopen_rodando.py) Classificação de do clima para o brasil de acordo com Koppen e os dados gradeados
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/koppen_brasil.png)
