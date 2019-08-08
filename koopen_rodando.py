@@ -18,7 +18,7 @@ lat = -15.5
 # Definindo o clima
 clima_localidade = koppen.koppen_classification(prec, avgtemp, lat)
 print(clima_localidade)  # Cfa
-# plotando os dados de
+# plotando os dados de precipitacao e temperatura
 fig, ax1 = plt.subplots()
 ax1.plot(prec)
 ax1.set_ylabel('Precipitação mensal [mm]', color='b')
@@ -54,7 +54,7 @@ mascara_prec = prec.isel(time=0).isnull().values
 lon_prec, lat_prec = np.meshgrid(prec.longitude.values, prec.latitude.values)
 prec = prec.sel(time=slice(day_first, day_last)).groupby('time.month').sum('time').values / 30  # media mensal de 30 anos
 
-# temperatura media mensal para numpy
+# temperatura media mensal em numpy.ndarray
 Tmean = ((tmax_month + tmin_month) / 2).values
 
 # reescalonando dados de precipitacao para mesma resolucao espacial da temperatura
