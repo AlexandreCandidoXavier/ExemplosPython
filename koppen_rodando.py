@@ -72,8 +72,9 @@ climate = np.empty((Tmean.shape[1], Tmean.shape[2]), dtype='|U16')
 for row in range(Tmean.shape[1]):
     for col in range(Tmean.shape[2]):
         prec_cell = prec_reescal[:, row, col]
+        Tmean_cell = Tmean[:, row, col]
         if ~np.isnan(prec_cell).any() and ~np.isnan(Tmean_cell).any():
-            climate[row, col] = koppen.koppen_classification(prec_cell, Tmean[:, row, col], lat_grid[row, col])
+            climate[row, col] = koppen.koppen_classification(prec_cell, Tmean_cell, lat_grid[row, col])
 
 # indexando os dados "climate" para serem plotados
 climate_color = np.empty((Tmean.shape[1], Tmean.shape[2]), dtype=np.float)
