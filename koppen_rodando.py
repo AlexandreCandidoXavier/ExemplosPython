@@ -63,7 +63,7 @@ for mes in range(12):
     prec_month = prec[mes]
     prec_month[mascara_prec] = np.nan
     prec_reescal[mes] = scipy.interpolate.griddata((lon_prec.flatten(), lat_prec.flatten()), prec_month.flatten(),
-                                                   (lon_grid, lat_grid), method='linear')
+                                                   (lon_grid, lat_grid), method='nearest')
 
 # criando variavel string para classes de clima em cada celula
 climate = np.empty((Tmean.shape[1], Tmean.shape[2]), dtype='|U16')
