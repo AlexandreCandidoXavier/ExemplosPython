@@ -4,7 +4,7 @@ import matplotlib.pylab as plt
 import scipy.interpolate
 import cartopy.crs as ccrs
 from cartopy.feature import NaturalEarthFeature
-import earthpy.plot as ep
+import matplotlib.patches as mpatches
 import koppen
 
 # EXEMPLO 1
@@ -36,20 +36,20 @@ fig.suptitle(clima_localidade)
 day_first, day_last = '1981-01-01', '2009-12-31'
 
 # caminho dos dados gradeados
-path = 'C:/Users/alexa/Dropbox/ParaUbuntu/netcdfgrid3/'
+path = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
 
 # pegando Tmax e Tmin, v2.1 e calculando as msuas respectivas medias mensais
-tmax = xr.open_mfdataset(path + 'Tmax_daily_UT_Brazil_v2.1*.nc').Tmax
+tmax = xr.open_mfdataset(path + 'Tmax_daily_UT_Brazil_v2.1*.nc', combine='nested', concat_dim='time').Tmax
 tmax_month = tmax.sel(time=slice(day_first, day_last)).groupby('time.month').mean('time')
 
-tmin = xr.open_mfdataset(path + 'Tmin_daily_UT_Brazil_v2.1*.nc').Tmin
+tmin = xr.open_mfdataset(path + 'Tmin_daily_UT_Brazil_v2.1*.nc', combine='nested', concat_dim='time').Tmin
 tmin_month = tmin.sel(time=slice(day_first, day_last)).groupby('time.month').mean('time')
 
 # para ser reescalonar a reolucao espacial dos dados de precipitacao para as dos dados de temperatura
 lon_grid, lat_grid = np.meshgrid(tmin.longitude.values, tmin.latitude.values)
 
 # pegando dados de precipitacao
-prec = xr.open_mfdataset(path + 'prec_daily_UT_Brazil_v*.nc').prec
+prec = xr.open_mfdataset(path + 'prec_daily_UT_Brazil_v*.nc', combine='nested', concat_dim='time').prec
 mascara_prec = prec.isel(time=0).isnull().values
 lon_prec, lat_prec = np.meshgrid(prec.longitude.values, prec.latitude.values)
 prec = prec.sel(time=slice(day_first, day_last)).groupby('time.month').sum('time').values / 30  # media mensal de 30 anos
@@ -87,8 +87,9 @@ for n, clima in enumerate(np.unique(climate).tolist()):
         climas.append(clima)
 
 # definindo cores
-cmap = plt.mpl.colors.ListedColormap(['darkblue','royalblue', 'cornflowerblue','lightblue',
-                                      'orange', 'greenyellow', 'seagreen', 'darkseagreen', 'yellowgreen'])
+color = ['darkblue', 'royalblue', 'cornflowerblue','lightblue', 'orange',
+         'greenyellow', 'seagreen', 'darkseagreen', 'yellowgreen']
+cmap = plt.mpl.colors.ListedColormap(color)
 
 # para plotar estados
 states = NaturalEarthFeature(category='cultural', scale='50m',
@@ -101,6 +102,7 @@ ax = fig.add_subplot(1, 1, 1, projection=ccrs.PlateCarree())
 im = ax.pcolormesh(lon_grid, lat_grid, climate_color, cmap=cmap)
 ax.add_feature(states, edgecolor='gray', facecolor='none')
 ax.set_extent([-75, -34, -34, 6])
-ep.draw_legend(im_ax=im, classes=climas, titles=climas)
+ax.legend(handles=[mpatches.Patch(color=color[n], label=climas[n]) for n in range(len(climas))],
+          handlelength=0.7, bbox_to_anchor=(1.05, 0.4), loc='lower left', borderaxespad=0.)
 plt.tight_layout()
 plt.show()
