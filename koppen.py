@@ -4,17 +4,19 @@ import numpy as np
 def koppen_classification(precip, avgtemp, lat):
     """
     # codigo baseado em:
+    # https://github.com/jgodwinWX/koppen/blob/master/koppen.py
     # https://www.nature.com/articles/sdata2018214
     # https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification
-    # https://github.com/jgodwinWX/koppen/blob/master/koppen.py
     import koppen
     # dados das media mensais da precipitacao, temperatura e latitude do ligar
-    precip = np.array([96, 149, 110, 127, 120, 114.2, 114.2, 111.9, 111.8, 97.9, 101.6, 87.1])
-    avgtemp = np.array([25.5, 25.0, 24.1, 21.1, 17.6, 15.3, 14.8, 16.4, 17.3, 20.0, 22.1, 24.2])
+    precip = [96, 149, 110, 127, 120, 114.2, 114.2, 111.9, 111.8, 97.9, 101.6, 87.1]
+    avgtemp = [25.5, 25.0, 24.1, 21.1, 17.6, 15.3, 14.8, 16.4, 17.3, 20.0, 22.1, 24.2]
     lat = -33.55
     koppen.koppen_classification(precip, avgtemp, lat)
     """
-    total_prec = np.sum(precip)
+    precip = np.array(precip)
+    avgtemp = np.array(avgtemp)
+    total_prec = precip.sum()
     climate = ''
 
     # Group B (Arid and Semiarid)
