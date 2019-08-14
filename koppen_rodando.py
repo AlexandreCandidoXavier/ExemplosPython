@@ -10,9 +10,9 @@ import koppen
 # EXEMPLO 1
 # Testando para uma localidade, neste exemplo, cidade de Verdelandia na Bahia.
 # precipitacao media mensal
-prec = np.array([140.1, 87.3, 115.9, 35.7, 5.6,  1.7, 0.6, 1.8, 10.8, 53.7, 142.9, 189.7])
+prec = [140.1, 87.3, 115.9, 35.7, 5.6,  1.7, 0.6, 1.8, 10.8, 53.7, 142.9, 189.7]
 # temperatura media mensal
-avgtemp = np.array([25.5, 25.9, 25.76, 25.1, 23.7, 22.2, 21.9, 23.0, 25.0, 26.3, 25.6, 25.3])
+avgtemp = [25.5, 25.9, 25.76, 25.1, 23.7, 22.2, 21.9, 23.0, 25.0, 26.3, 25.6, 25.3]
 # latitude. So´ serve para a definicao dos hemisferios
 lat = -15.5
 # Definindo o clima
