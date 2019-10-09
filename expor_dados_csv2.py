@@ -25,7 +25,7 @@ for n, var_name2get in enumerate(var_names):
     if n == 0:
         var_ar = rawData(var2get_xr, var_name2get)
         n_lines = var_ar.shape[0]
-        time = var2get_xr.time
+        time = var2get_xr.time.values
     elif var_name2get != 'prec':
         var_ar = np.c_[var_ar, rawData(var2get_xr, var_name2get)]
     else:
