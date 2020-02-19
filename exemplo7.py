@@ -3,20 +3,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 from cartopy.feature import NaturalEarthFeature, BORDERS
 import cartopy.crs as ccrs
-from matplotlib.axes import Axes
-from cartopy.mpl.geoaxes import GeoAxes
-GeoAxes._pcolormesh_patched = Axes.pcolormesh
+#from matplotlib.axes import Axes
+#from cartopy.mpl.geoaxes import GeoAxes
+#GeoAxes._pcolormesh_patched = Axes.pcolormesh
 
-"""
-Calculo da diferenca sazonal entre a precipitacao e a 
+""" Calculo da diferenca sazonal entre a precipitacao e a 
 ET0 para o Brasil utilizando os dados gradeados 
-(periodo de 1980/01/01  a2009/12/31)
+(periodo de 1980/01/01  a 2009/12/31)
 """
 
 # pegando variavel
-path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
-ETo = xr.open_mfdataset(path_var + 'ETo_daily_UT_Brazil_v2*1.nc')
-prec = xr.open_mfdataset(path_var + 'prec_daily_UT_Brazil_v2*1.nc')
+path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
+ETo = xr.open_mfdataset(path_var + 'ETo_daily_UT_Brazil_v2*1.nc', combine='by_coords')
+prec = xr.open_mfdataset(path_var + 'prec_daily_UT_Brazil_v2*1.nc', combine='by_coords')
 
 # criando mascara para o continente e mar
 mask_ocean = 2 * np.ones(prec['prec'].shape[1:]) * np.isnan(prec['prec'].isel(time=0))
