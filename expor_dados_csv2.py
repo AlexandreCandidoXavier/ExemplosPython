@@ -3,7 +3,9 @@ import xarray as xr
 import pandas as pd
 import time
 
-# positions
+# positions. Colocar em ordem, separando por virgula. Neste exemplo temos dois pontos em que as coordenadas
+# (lat, lon) sao (-20.6,-44.6) e  (-21.0, -44.1), respectivamente para o primeiro e segundo ponto.
+# Pode-se colocar quantos pontos quiser, apenas separe por virgula.
 lat = [-20.6, -21.0]
 lon = [-44.6, -44.1]
 
@@ -11,7 +13,7 @@ lon = [-44.6, -44.1]
 var_names = ['Rs', 'u2','Tmax', 'Tmin', 'RH', 'prec', 'ETo']
 
 # set correct path of the netcdf files
-path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
+path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
 
 # function to read the netcdf files
 def rawData(var2get_xr, var_name2get):
@@ -21,7 +23,7 @@ def rawData(var2get_xr, var_name2get):
 
 # getting data from NetCDF files
 for n, var_name2get in enumerate(var_names):
-    var2get_xr = xr.open_mfdataset(path_var + var_name2get + '_daily_UT_Brazil_v2*.nc')
+    var2get_xr = xr.open_mfdataset(path_var + var_name2get + '_daily_UT_Brazil_v2*.nc', combine='by_coords')
     if n == 0:
         var_ar = rawData(var2get_xr, var_name2get)
         n_lines = var_ar.shape[0]
