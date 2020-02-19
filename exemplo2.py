@@ -41,5 +41,5 @@ plt.show()
 # exportando dados diarios em cvs: nome do arquivo 'Tmax.cvs'
 fileName = 'Tmax.csv'
 days = np.array(Tmax_data_temporal.time)
-data_dataframe = pd.Series(np.array(Tmax_data_temporal), index=days)
+data_dataframe = pd.DataFrame(np.array(Tmax_data_temporal), index=days)
 data_dataframe.to_csv(fileName)
