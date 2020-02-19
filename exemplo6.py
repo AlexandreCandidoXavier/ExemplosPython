@@ -1,8 +1,7 @@
 import xarray as xr # versao '0.9.6'
 import matplotlib.pyplot as plt # versao '2.0.2'
 
-"""
-Para todas as variaveis existem dois controles, um he a distancia 
+""" Para todas as variaveis existem dois controles, um he a distancia 
 do centro da celula a estacao mais proxima ("dist_nearest") e o outro
 he o numero de estacoes/pluviometros dentro da celula (informacoes 
 ver "paper"). 
@@ -13,8 +12,8 @@ celula mais proxima a estas cidades).
 """
 
 # lendo arquivo
-path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/controls/'
-ds = xr.open_mfdataset(path_var + 'prec_daily_UT_Brazil_v2*control.nc')
+path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/controls/'
+ds = xr.open_mfdataset(path_var + 'prec_daily_UT_Brazil_v2*Control.nc', combine='by_coords')
 dist_nearest = ds['dist_nearest']
 count = ds['count']
 
