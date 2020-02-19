@@ -1,6 +1,6 @@
-import xarray as xr                 # versao '0.9.6'
+import xarray as xr
 import matplotlib.pyplot as plt
-# versao '2.0.2'
+
 """Plotando media mensal da Umidade Relativa (01/01/2006-31/12/2016) 
 para todo Brasil. Arquivos necessarios:
 
@@ -10,9 +10,12 @@ RH_daily_UT_Brazil_v2_20000101_20061231.nc
 RH_daily_UT_Brazil_v2_20070101_20131231.nc
 RH_daily_UT_Brazil_v2_20140101_20170731_s1.nc"""
 
+# versoes
+print(xr.__version__) # 0.14.1
+
 # pegando variavel
-path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
-ds = xr.open_mfdataset(path_var + 'RH_daily_UT_Brazil_v2*1.nc')
+path_var =  '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
+ds = xr.open_mfdataset(path_var + 'RH_daily_UT_Brazil_v2*1.nc', combine='by_coords')
 
 # pegando a variavel RH entre 01/01/2006-31/12/2016
 RH_data = ds.RH.sel(time=slice('2006-01-01', '2016-12-31'))
