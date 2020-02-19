@@ -15,15 +15,14 @@ Tmax_daily_UT_Brazil_v2.1_20140101_20170731.nc
 """
 
 # pegando variavel
-path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
-ds = xr.open_mfdataset(path_var + 'Tmax_daily_UT_Brazil_v2.1*.nc')
-var = ds['Tmax']
+path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
+var = xr.open_mfdataset(path_var + 'Tmax_daily_UT_Brazil_v2.1*.nc', combine='by_coords')['Tmax']
 
 # Nome dos pontos
 Names = ['INPE-SP', 'UFCG-PB', 'UFC-CE']
 lat_lon = [[-23.2, -45.9],
-         [-7.2, -35.9],
-         [-3.8, -38.6],]
+           [-7.2, -35.9],
+           [-3.85, -38.6],]
 varMonthly2Export = pd.DataFrame(np.empty((12, len(Names))),
                                  columns=Names,
                                  index=range(1, 13))
