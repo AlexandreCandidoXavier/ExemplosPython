@@ -61,7 +61,13 @@ Temperatura média (T<sub>média</sub>) para o mês de janeiro, período 01/01/1
 
 T<sub>média</sub>=(T<sub>max</sub>+T<sub>min</sub>)/2
 
+# Janeiro
+
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_8.png)
+
+
+# Todos os meses
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/Figure_8_2.png)
 
 
 ## [abrindo_relevo.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/abrindo_relevo.py) Abrindo relevo para a região do Brasil do modelo gmted2010, reamostrado para 0,1 graus
