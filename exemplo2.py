@@ -17,6 +17,7 @@ Tmax_daily_UT_Brazil_v2_20140101_20170731_s1.nc
 # versoes
 print(xr.__version__) # 0.14.1
 print(np.__version__) # 1.16.4
+print (pd.__version__) # 0.24.2
 
 # set correct path of the variables
 path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
