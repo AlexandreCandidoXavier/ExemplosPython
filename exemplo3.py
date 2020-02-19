@@ -1,31 +1,29 @@
 import xarray as xr
 import matplotlib.pyplot as plt
 
-""" Plotando a média mensal da ET0 para algumas cidades.
-"""
+"""Plotando media mensal da Umidade Relativa (01/01/2006-31/12/2016) 
+para todo Brasil. Arquivos necessarios:
+
+RH_daily_UT_Brazil_v2_19800101_19891231.nc
+RH_daily_UT_Brazil_v2_19900101_19991231.nc
+RH_daily_UT_Brazil_v2_20000101_20061231.nc
+RH_daily_UT_Brazil_v2_20070101_20131231.nc
+RH_daily_UT_Brazil_v2_20140101_20170731_s1.nc"""
+
+# versoes
+print(xr.__version__) # 0.14.1
 
 # pegando variavel
-path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
-ds = xr.open_mfdataset(path_var + 'ETo_daily_UT_Brazil_v2_*.nc', combine='by_coords')
-var = ds['ETo']
+path_var =  '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
+ds = xr.open_mfdataset(path_var + 'RH_daily_UT_Brazil_v2*1.nc', combine='by_coords')
 
-# cidades e coordenadas
-cityNames = ['Santa Maria-RS', 'Manaus-AM',
-             'Petrolina-PE', 'Alegre-ES']
-cityCoord = [[-29.7, -53.7],
-             [-3., -60.],
-             [-9.4, -40.5],
-             [-20.7, -41.5]]
+# pegando a variavel RH entre 01/01/2006-31/12/2016
+RH_data = ds.RH.sel(time=slice('2006-01-01', '2016-12-31'))
 
-# calculando a media mensal
-varMean = var.resample(time='M').mean('time')
+# agrupando em media mensal
+RH_mean_month = RH_data.groupby('time.month').mean('time')
 
 # plotando
-for n, city in enumerate(cityNames):
-    varMean.sel(latitude=cityCoord[n][0], longitude=cityCoord[n][1],
-                method='nearest').plot(label=city)
-
-plt.ylim(1, 8)
-plt.title('')
-plt.legend(ncol=2)
+RH_mean_month.plot(x='longitude', y='latitude', col='month',
+                   cmap='RdBu', col_wrap=4)
 plt.show()
