@@ -1,13 +1,12 @@
 import xarray as xr
 import matplotlib.pyplot as plt
 
-"""
-Plotando a média mensal da ET0 para algumas cidades.
+""" Plotando a média mensal da ET0 para algumas cidades.
 """
 
 # pegando variavel
-path_var = 'D:/Dropbox/ParaUbuntu/netcdfgrid3/'
-ds = xr.open_mfdataset(path_var + 'ETo_daily_UT_Brazil_v2_*.nc')
+path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
+ds = xr.open_mfdataset(path_var + 'ETo_daily_UT_Brazil_v2_*.nc', combine='by_coords')
 var = ds['ETo']
 
 # cidades e coordenadas
@@ -17,6 +16,7 @@ cityCoord = [[-29.7, -53.7],
              [-3., -60.],
              [-9.4, -40.5],
              [-20.7, -41.5]]
+
 # calculando a media mensal
 varMean = var.resample(time='M').mean('time')
 
