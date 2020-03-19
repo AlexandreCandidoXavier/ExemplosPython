@@ -102,5 +102,5 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/koppen_brasil.png)
 
-## [Avatar]
+## [Avatar](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/avatar.py) Esboço de código para a construção do meu avatar
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/avatar.png)
