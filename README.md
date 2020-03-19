@@ -101,3 +101,6 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 ## [koppen_rodando.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/koppen_rodando.py) Classificação do clima para o brasil de acordo com Koppen e os dados gradeados
 
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/koppen_brasil.png)
+
+## [Avatar]
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/avatar.png)
