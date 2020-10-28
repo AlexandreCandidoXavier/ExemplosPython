@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import geopandas as gpd
 import os
-"""Este script gera arquivos diários de prec, Tmax e Tmin, referentes ao centroide de cad municipio brasileiro.
+"""Este script gera arquivos diários de prec, Tmax e Tmin, referentes ao centroide de cada municipio brasileiro.
 """
 
 # arquido shape em Brasil
@@ -21,13 +21,6 @@ path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
 prec = xr.open_mfdataset(path_var + 'prec_daily_UT_Brazil_v2*.nc')['prec']
 Tmax = xr.open_mfdataset(path_var + 'Tmax_daily_UT_Brazil_v2*.nc')['Tmax']
 Tmin = xr.open_mfdataset(path_var + 'Tmin_daily_UT_Brazil_v2*.nc')['Tmin']
-
-number_munici = len(lat)
-
-prec_values = np.zeros((number_munici, prec.shape[0]))
-Tmax_values = np.zeros((number_munici, Tmax.shape[0]))
-Tmin_values = np.zeros((number_munici, Tmin.shape[0]))
-ID = np.zeros(number_munici, np.int64)
 
 # exportando
 pd.DataFrame(prec.sel(longitude=xr.DataArray(lon, dims='z'),
