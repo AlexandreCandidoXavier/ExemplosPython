@@ -104,3 +104,5 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 
 ## [avatar.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/avatar.py) Esboço de código para a construção do meu avatar
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/avatar.png)
+
+## [exemplo_paraview.py]() Gerando arquivo NetCDF para abrir no ParaView
