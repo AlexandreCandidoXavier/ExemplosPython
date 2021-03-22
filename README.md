@@ -106,4 +106,4 @@ Infromações sobre os dados originais [aqui](https://pubs.usgs.gov/of/2011/1073
 ![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/avatar.png)
 
 ## [exemplo_paraview.py](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/exemplo_paraview.py) Gerando arquivo NetCDF para abrir no ParaView
-![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/figure_ParaView.png)
+![](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/figuras/figure_ParaView.png). Video demonstrativo [aqui](https://drive.google.com/file/d/1ghXjHY-xgXYKCIUsKcFgICHj4ZNjrOXn/view)
