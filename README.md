@@ -1,7 +1,7 @@
 # ExemplosPython
 
 # <html>style="color:red">&Delta; (&#8451;/ano)</html>
-<span style="color:orange;">Word up</span>
+<html><span style="color:orange;">Word up</span></html>
 
 Este repositório trata de vários exemplos de scripts para manuseio dos dados gradeado gerados por Xavier et al. (2016):
 
