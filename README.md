@@ -1,10 +1,10 @@
-# ExemplosPython
-
 ```diff
 - ESTA PÁGINA NÃO SERA MAIS ATUALIZADA! EM CONSTRUÇÃO NO REPOSITÓRIO AlexandreCandidoXavier/BR-DWGD 
 - CÓDIGOS PARA A GRADE QUE SERÁ ATUALIZADA.
 ```
 
+
+# ExemplosPython
 
 Este repositório trata de vários exemplos de scripts para manuseio dos dados gradeado gerados por Xavier et al. (2016):
 
