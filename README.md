@@ -1,7 +1,7 @@
 # ExemplosPython
 
 ```diff
-- text in red
+ESTA PÁGINA NÃO SERA MAIS ATUALIZADA! EM CONSTRUÇÃO NO REPOSITÓRIO BR-DWGD
 ```
 
 
