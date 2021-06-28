@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 """
 
 # pegando variavel
-path_var = '/home/alexandre/Dropbox/ParaUbuntu/netcdfgrid3/'
-ds = xr.open_mfdataset(path_var + 'ETo_daily_UT_Brazil_v2_*.nc', combine='by_coords')
+path_var = '/home/alexandre/Dropbox/grade_2020/data/netcdf_files/'
+ds = xr.open_mfdataset(path_var + 'ETo*.nc').sel(time=slice('1961-01-01','1989-12-31'))
 var = ds['ETo']
 
 # cidades e coordenadas
@@ -23,9 +23,9 @@ varMean = var.resample(time='M').mean('time')
 # plotando
 for n, city in enumerate(cityNames):
     varMean.sel(latitude=cityCoord[n][0], longitude=cityCoord[n][1],
-                method='nearest').plot(label=city)
+                method='nearest').plot(label=city, linewidth=1)
 
 plt.ylim(1, 8)
 plt.title('')
 plt.legend(ncol=2)
-plt.show()
+plt.show(block=False)
