@@ -1,6 +1,6 @@
 # ExemplosPython
 
-# <html>style="color:red">&Delta; (&#8451;/ano)</html>
+<html><span style="color:blue">some *blue* text</span>.</html>
 
 <p>Hi here is some text <span>this is red</span>.</p>
 
