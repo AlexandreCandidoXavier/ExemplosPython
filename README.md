@@ -1,13 +1,6 @@
 # ExemplosPython
 
-# <html>
-<body>
-
-<p style="color:red">This is a paragraph.</p>
-<p style="color:blue">This is another paragraph.</p>
-
-</body>
-</html>
+# <html>style="color:red">This is a paragraph</html>
 
 Este repositório trata de vários exemplos de scripts para manuseio dos dados gradeado gerados por Xavier et al. (2016):
 
