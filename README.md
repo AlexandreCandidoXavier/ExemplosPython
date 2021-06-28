@@ -1,8 +1,12 @@
 # ExemplosPython
 
-<html><span style="color:blue">some *blue* text</span>.</html>
-
-<p>Hi here is some text <span>this is red</span>.</p>
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 
 Este repositório trata de vários exemplos de scripts para manuseio dos dados gradeado gerados por Xavier et al. (2016):
