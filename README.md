@@ -21,7 +21,7 @@ Para download dos arquivos, acessar [aqui](https://utexas.app.box.com/v/Xavier-e
 # Arquivos necessários
 A lista completa dos arquivos NetCDF para rodar os scripts, são apresentados no arquivo [arquivos_NetCDF.txt](https://github.com/AlexandreCandidoXavier/ExemplosPython/blob/master/arquivos_NetCDF.txt).
 
-# Informações sobre atualizações [aqui](https://sites.google.com/site/alexandrecandidoxavierufes/dados-meteorologicos-do-brasil)
+# Informações sobre atualizações [aqui](https://sites.google.com/site/alexandrecandidoxavierufes/brazilian-daily-weather-gridded-data?authuser=0)
 
 # Para exportar todos os dados em CSV
 
