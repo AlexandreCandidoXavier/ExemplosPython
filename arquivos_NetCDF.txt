@@ -1,5 +1,5 @@
 Os arquivos abaixo encontram-se em:
-https://www.dropbox.com/sh/awb2ghit03kf39c/AAD69uHiLxVN6IoAwIyXLQ3Pa?dl=0
+https://sites.google.com/site/alexandrecandidoxavierufes/brazilian-daily-weather-gridded-data?authuser=0
 
 ETo_daily_UT_Brazil_v2_19800101_19891231.nc
 ETo_daily_UT_Brazil_v2_19900101_19991231.nc
